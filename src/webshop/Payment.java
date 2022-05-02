@@ -3,7 +3,6 @@ package webshop;
 import java.time.LocalDate;
 
 public class Payment {
-
     private String webshopId;
     private String customerId;
     private PaymentMethod paymentMethod;
