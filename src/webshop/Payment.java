@@ -12,6 +12,17 @@ public class Payment {
     private Long cardNumber;
     private LocalDate paymentDate;
 
+    public Payment(){}
+    public Payment(String webshopId, String customerId, PaymentMethod paymentMethod, Integer price, Long accountNumber, Long cardNumber, LocalDate paymentDate) {
+        this.webshopId = webshopId;
+        this.customerId = customerId;
+        this.paymentMethod = paymentMethod;
+        this.price = price;
+        this.accountNumber = accountNumber;
+        this.cardNumber = cardNumber;
+        this.paymentDate = paymentDate;
+    }
+
     public String getWebshopId() {
         return webshopId;
     }
@@ -58,19 +69,6 @@ public class Payment {
         return paymentDate;
     }
     public void setPaymentDate(LocalDate paymentDate) {
-        this.paymentDate = paymentDate;
-    }
-
-    public Payment(){
-
-    }
-    public Payment(String webshopId, String customerId, PaymentMethod paymentMethod, Integer price, Long accountNumber, Long cardNumber, LocalDate paymentDate) {
-        this.webshopId = webshopId;
-        this.customerId = customerId;
-        this.paymentMethod = paymentMethod;
-        this.price = price;
-        this.accountNumber = accountNumber;
-        this.cardNumber = cardNumber;
         this.paymentDate = paymentDate;
     }
 
